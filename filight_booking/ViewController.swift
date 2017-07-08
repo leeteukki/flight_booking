@@ -23,7 +23,11 @@ class ViewController: UIViewController {
         }else{
             SelectDatePicker.isHidden = false
         }
+        
+        buttonTag = (sender as! UIButton).tag
     }
+    
+    var buttonTag:Int = 1
     
     @IBAction func selectedDateAction(_ sender: Any) {
         let formatter = DateFormatter()
@@ -32,8 +36,14 @@ class ViewController: UIViewController {
         let dateString = formatter.string(from: SelectDatePicker.date)
     
         
+        if buttonTag == 1 {
+            
+            departrueDateBtn.setTitle(dateString, for: UIControlState())
         
-        departrueDateBtn.setTitle(dateString, for: UIControlState())
+        } else {
+            returnDateBtn.setTitle(dateString, for: UIControlState())
+        }
+        
         
     }
     
@@ -51,6 +61,7 @@ class ViewController: UIViewController {
  */
         returnDateLa.isHidden  = !(sender as! UISwitch).isOn
         returnDateBtn.isHidden = !(sender as! UISwitch).isOn
+        
     }
     
     
