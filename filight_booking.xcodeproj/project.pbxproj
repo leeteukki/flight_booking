@@ -14,6 +14,7 @@
 		0602B73C1F10AC1E00257383 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0602B73A1F10AC1E00257383 /* LaunchScreen.storyboard */; };
 		0602B7471F10AC1E00257383 /* filight_bookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0602B7461F10AC1E00257383 /* filight_bookingTests.swift */; };
 		0602B7521F10AC1E00257383 /* filight_bookingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0602B7511F10AC1E00257383 /* filight_bookingUITests.swift */; };
+		0602B7601F10AC8100257383 /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0602B75F1F10AC8100257383 /* background.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0602B74D1F10AC1E00257383 /* filight_bookingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = filight_bookingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0602B7511F10AC1E00257383 /* filight_bookingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filight_bookingUITests.swift; sourceTree = "<group>"; };
 		0602B7531F10AC1E00257383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0602B75F1F10AC8100257383 /* background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpeg; path = ../../background.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		0602B7301F10AC1E00257383 /* filight_booking */ = {
 			isa = PBXGroup;
 			children = (
+				0602B75F1F10AC8100257383 /* background.jpeg */,
 				0602B7311F10AC1E00257383 /* AppDelegate.swift */,
 				0602B7331F10AC1E00257383 /* ViewController.swift */,
 				0602B7351F10AC1E00257383 /* Main.storyboard */,
@@ -235,6 +238,7 @@
 				0602B73C1F10AC1E00257383 /* LaunchScreen.storyboard in Resources */,
 				0602B7391F10AC1E00257383 /* Assets.xcassets in Resources */,
 				0602B7371F10AC1E00257383 /* Main.storyboard in Resources */,
+				0602B7601F10AC8100257383 /* background.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
