@@ -18,10 +18,23 @@ class ViewController: UIViewController {
     @IBOutlet var SelectDatePicker: UIDatePicker!
     
     @IBAction func showDatePicker(_ sender: Any) {
-        SelectDatePicker.isHidden = false
+        if SelectDatePicker.isHidden == false{
+            SelectDatePicker.isHidden = true
+        }else{
+            SelectDatePicker.isHidden = false
+        }
     }
     
     @IBAction func selectedDateAction(_ sender: Any) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "YY-MM-d hh:mma"
+        
+        let dateString = formatter.string(from: SelectDatePicker.date)
+    
+        
+        
+        departrueDateBtn.setTitle(dateString, for: UIControlState())
+        
     }
     
     @IBAction func showReturnDateAction(_ sender: Any) {
@@ -50,6 +63,13 @@ class ViewController: UIViewController {
         
     }
 
+    //바탕화면 눌렀을떄 키보드 내려감
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        SelectDatePicker.isHidden = true
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
